@@ -1,0 +1,125 @@
+/* Todo.css */
+
+/* Container cho toàn bộ ứng dụng Todo */
+.todo-container {
+  max-width: 400px;
+  margin: 50px auto; /* Căn giữa container theo chiều ngang với lề trên */
+  padding: 20px;
+  background-color: #f9f9f9; /* Màu nền nhạt */
+  border-radius: 8px; /* Góc bo tròn */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ tạo chiều sâu */
+  font-family: Arial, sans-serif; /* Font chữ đồng nhất */
+}
+
+/* Tiêu đề của danh sách Todo */
+.todo-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: linear-gradient(orangered, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Container cho input và nút thêm */
+.todo-new {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Định kiểu trường nhập liệu */
+.todo-new input[type='text'] {
+  flex: 1; /* Cho phép input chiếm không gian còn lại */
+  padding: 10px;
+  border: 2px solid #ddd; /* Viền nhẹ */
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.todo-new input[type='text']:focus {
+  border-color: #6c63ff; /* Thay đổi màu viền khi focus */
+  outline: none; /* Loại bỏ đường viền mặc định */
+}
+
+/* Định kiểu nút Thêm */
+.todo-new button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #6c63ff; /* Màu nền chính cho nút */
+  color: #fff; /* Chữ màu trắng */
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  /* cursor: pointer; */
+  transition: background-color 0.3s;
+}
+
+.todo-new button:hover {
+  background-color: #5750d8; /* Màu tối hơn khi hover */
+}
+
+/* Container cho danh sách todos */
+.todo-data {
+  list-style-type: none; /* Loại bỏ kiểu danh sách mặc định */
+  padding: 0;
+}
+
+/* Các mục todo riêng lẻ */
+.todo-data div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee; /* Viền ngăn cách nhẹ */
+  font-size: 18px;
+  color: #555;
+}
+
+.todo-data div:last-child {
+  border-bottom: none; /* Loại bỏ viền từ mục cuối cùng */
+}
+
+/* Tùy chọn: Định kiểu cho các todo đã hoàn thành */
+.todo-data .completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Tùy chọn: Thêm nút xóa cho mỗi todo */
+.todo-data .delete-button {
+  background-color: transparent;
+  border: none;
+  color: #e74c3c; /* Màu đỏ cho nút xóa */
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.todo-data .delete-button:hover {
+  color: #c0392b;
+}
+/* Đảm bảo rằng container có vị trí tương đối nếu cần */
+.todo-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Để căn giữa theo chiều dọc */
+}
+
+.react-logo {
+  width: 150px; /* Tăng kích thước logo */
+  height: 150px;
+  animation: rotate 5s linear infinite; /* Áp dụng animation xoay */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
