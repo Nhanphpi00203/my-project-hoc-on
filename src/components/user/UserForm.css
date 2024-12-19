@@ -1,0 +1,39 @@
+/* UserForm.css */
+
+.user-form-container {
+  max-width: 500px; /* Độ rộng tối đa của form */
+  margin: 50px auto; /* Căn giữa form trên trang */
+  padding: 30px;
+  background-color: #ffffff; /* Màu nền trắng */
+  border: 1px solid #d9d9d9; /* Viền nhẹ */
+  border-radius: 8px; /* Bo góc */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #1890ff; /* Màu xanh đặc trưng của Ant Design */
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Khoảng cách giữa các trường */
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #595959;
+}
+
+.form-input {
+  width: 100%;
+}

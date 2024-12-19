@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.logo h1 {
+  color: #fff;
+  margin: 0;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-left: 20px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Thêm kiểu cho liên kết active */
+.active-link {
+  background-color: #555;
+  border-radius: 4px;
+  /* Bạn có thể thêm các thuộc tính khác tùy ý */
+}
